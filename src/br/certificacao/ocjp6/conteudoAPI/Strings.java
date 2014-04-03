@@ -2,7 +2,7 @@ package br.certificacao.ocjp6.conteudoAPI;
 
 /**
  * <h1>Strings</h1><br/>
- * Todas possuem o metodo length() que retorna o numero de caracteres
+ * Todas possuem o metodo length() que retorna o numero de caracteres e imlementam a interface {@link CharSequence}
  * <br/>
  * <h2>{@link String}</h2><br/>
  * São Objetos imutáveis onde uma vez construido não pode ter seu valor
