@@ -104,6 +104,7 @@ public class Excessões {
 		}
 
 		String s = String.valueOf(inteiro);
+		System.out.println("s : "+s);
 	}
 
 	/**
@@ -113,7 +114,7 @@ public class Excessões {
 	 */
 	public void exemploMetodoLancaExcessaoChecked() throws DataFormatException {
 		DateFormat dataFormatada = DateFormat.getDateTimeInstance();
-		throw new DataFormatException();
+		throw new DataFormatException(dataFormatada.toString());
 	}
 
 	public void exemploStackOverflowException() {

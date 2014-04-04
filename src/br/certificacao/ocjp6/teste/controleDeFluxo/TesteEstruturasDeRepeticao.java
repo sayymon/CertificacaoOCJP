@@ -1,7 +1,5 @@
 package br.certificacao.ocjp6.teste.controleDeFluxo;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import br.certificacao.ocjp6.controleDeFluxo.EstruturasDeRepetição;

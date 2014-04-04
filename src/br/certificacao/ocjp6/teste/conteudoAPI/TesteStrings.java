@@ -1,7 +1,5 @@
 package br.certificacao.ocjp6.teste.conteudoAPI;
 
-import static org.junit.Assert.fail;
-
 import org.junit.Test;
 
 import br.certificacao.ocjp6.conteudoAPI.Strings;

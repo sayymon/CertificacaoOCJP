@@ -97,6 +97,7 @@ public class Wrappers {
 		Boolean wrapperBoleano = Boolean.parseBoolean(textoBoolean);
 		boolean primitivoBoleano = Boolean.parseBoolean(textoBoolean);
 		primitivoBoleano = wrapperBoleano; // UnBoxing
+		System.out.println("primitivoBoleano : "+primitivoBoleano);
 	}
 
 	/**
@@ -140,6 +141,7 @@ public class Wrappers {
 		wrapperInteger = new Integer("25");
 		primitivoInt = Integer.parseInt("20");
 		primitivoInt = Integer.parseInt("F", 16);// base hexadecimal
+		System.out.println("primitivoInt : "+primitivoInt);
 	}
 
 	public void exemploLong() {
@@ -177,6 +179,8 @@ public class Wrappers {
 		Double d = (double) 100;
 		// ou
 		d = 100d;
+		System.out.println(primitivoInt);
+		System.out.println(d);
 	}
 
 	/**
