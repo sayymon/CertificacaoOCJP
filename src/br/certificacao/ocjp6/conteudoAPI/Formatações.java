@@ -28,7 +28,12 @@ import java.util.Locale;
  * <br/>
  * E para formatar somente o horário construirmos uma instância de DateFormat
  * utilizando o método
- * <code>getDateTimeInstance() e getDateTimeInstance( {@link Locale} )</code>
+ * <code>getDateTimeInstance() e getDateTimeInstance( {@link Locale} )</code> <br/>
+ * <br/>
+ * Para convertemos Data em String utilizamos o método
+ * <code>String format(Date)</code> Para convertemos String em Data utilizamos o
+ * método<code>Date parse(String)</code>
+ * 
  * <h2> {@link NumberFormat}</h2> Classe abstrata para formatação de Tipos
  * numéricos para String e vice-versa baseada nas localidades {@link Locale}<br/>
  * <br/>
@@ -234,6 +239,41 @@ public class Formatações {
 		formatadorData = DateFormat.getDateInstance(DateFormat.FULL);
 		System.out.println("Apenas Estilo FULL : "
 				+ formatadorData.format(new Date()));
+	}
+
+	/**
+	 * <h1>Exemplo Conversão String Date e vice-versa</h1>
+	 * 
+	 * <pre>
+	 * DateFormat formatadorDataHora = DateFormat.getDateInstance();
+	 * try {
+	 * 	Date data = formatadorDataHora.parse("04/04/14 11:15");
+	 * 	String dataString = formatadorDataHora.format(data);
+	 * 	System.out.println("data =" + data);
+	 * 	System.out.println("dataString =" + dataString);
+	 * } catch (ParseException e) {
+	 * 	System.out.println("Lanço uma excessão de falha de conversão");
+	 * 	e.printStackTrace();
+	 * }
+	 * </pre>
+	 * 
+	 * Apresenta : data =Fri Apr 04 11:15:00 BRT 2014<br/>
+	 * dataString =04/04/14 11:15<br/>
+	 * 
+	 * @throws ParseException
+	 */
+	public void exemploConversaoStringDate() {
+		DateFormat formatadorDataHora = DateFormat.getInstance();
+
+		try {
+			Date data = formatadorDataHora.parse("04/04/14 11:15");
+			String dataString = formatadorDataHora.format(data);
+			System.out.println("data =" + data);
+			System.out.println("dataString =" + dataString);
+		} catch (ParseException e) {
+			System.out.println("Lanço uma excessão de falha de conversão");
+			e.printStackTrace();
+		}
 	}
 
 }
