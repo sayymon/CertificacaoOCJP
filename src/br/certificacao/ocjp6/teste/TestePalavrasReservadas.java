@@ -1,6 +1,6 @@
 package br.certificacao.ocjp6.teste;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
