@@ -2,8 +2,6 @@ package br.certificacao.ocjp6.programacaoConcorrente;
 
 import java.text.NumberFormat;
 
-import javax.sql.rowset.spi.SyncResolver;
-
 /**
  * <h1>Threads</h1> <br/>
  * É a forma de executar codigos em paralelo;<br/>
